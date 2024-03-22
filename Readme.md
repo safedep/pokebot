@@ -4,20 +4,17 @@ Pokebot is a demonstration vulnerable Retrieval-Augmented Generation (RAG) appli
 
 ## Quick Start
 
-### Installation
-
-Clone the repository and navigate to the project directory:
+Clone the repository and Install:
 ```bash
 git clone https://github.com/jchauhan/pokebot
 cd pokebot
+pip install poetry
+poetry install
+poetry run pokebot --seed data/med/articles/diabetes.txt
 ```
+above command will create a virtual env in case non exists
 
-Install the required dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-### Setup OpenAI API Key
+**Setup OpenAI API Key**
 
 Set your OpenAI API key as an environment variable:
 ```bash
@@ -25,11 +22,19 @@ export OPENAI_API_KEY=<your_openai_api_key>
 ```
 Replace `<your_openai_api_key>` with your actual OpenAI API key.
 
-### Running the Application
+
+**Running the Application**
 
 Start the Pokebot application by providing seed data (optional):
 ```bash
-python main.py --seed data/med/articles/diabetes.txt
+poetry run pokebot --seed data/med/articles/diabetes.txt
+```
+
+**Alternatively use Pip**
+
+```bash
+pip install -r requirements.txt
+python pokebot/main.py --seed data/med/articles/diabetes.txt
 ```
 
 Once the application is running, click on the Gradio link provided to access the app.
