@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "gengar"
+version = "0.1"
+description = "Damn Vulnerable GenAI Rag App"
+authors = ["jchauhan <jitendra@detoxio.ai>"]
+readme = "Readme.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langchain = "^0.1.13"
+langchain-openai = "^0.1.0"
+faiss-cpu = "^1.8.0"
+gradio = "^4.22.0"
+pypdf = "^4.1.0"
+beautifulsoup4 = "^4.12.3"
+tiktoken = "^0.6.0"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.0.2"
+tox = "*"
+
+[tox]
+requires = { tox = ">=4" }
+env_list = [
+    "py{310}",
+    "lint",
+    "type",
+    "coverage"
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+gengar = "gengar.main:main"

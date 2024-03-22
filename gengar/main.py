@@ -94,7 +94,7 @@ class RAGApp:
         demo.launch(share=True)
 
 
-if __name__ == "__main__":
+def main():
     # Parse command-line arguments
     parser = argparse.ArgumentParser(description='RAG App with command-line options.')
     parser.add_argument('--seed', type=str, help='Path to a file containing URLs for seeding training documents.')
@@ -109,3 +109,6 @@ if __name__ == "__main__":
     # Initialize and run the RAGApp
     app = RAGApp(seed_training_urls=seed_list)
     app.run()
+
+if __name__ == "__main__":
+   main()
