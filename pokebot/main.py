@@ -45,7 +45,7 @@ class RAGApp:
 
     def _get_data_folder_location(self, rel_path):
         # Get absolute path to data folder
-        data_folder = pkg_resources.resource_filename(__name__, rel_path)
+        data_folder = rel_path
         return data_folder
 
     def _update_docs(self):
@@ -110,8 +110,7 @@ def main():
     # If seed is provided, parse and load the URLs in an array
     seed_list = []
     if args.seed:
-        seed_file = pkg_resources.resource_filename(__name__, args.seed)
-        with open(seed_file, 'r') as file:
+        with open(args.seed, 'r') as file:
             seed_list = [line.strip() for line in file.readlines()]
 
     # Initialize and run the RAGApp

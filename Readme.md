@@ -1,10 +1,10 @@
-Below is a suggested README file for the Gengar project:
+Below is a suggested README file for the Pokebot project:
 
 ---
 
-# Gengar: Vulnerable RAG Application for Testing GenAI Specific Vulnerabilities
+# Pokebot: Vulnerable RAG Application for Testing GenAI Specific Vulnerabilities
 
-Gengar is a demonstration vulnerable Retrieval-Augmented Generation (RAG) application designed for learning and testing specific vulnerabilities related to Generative AI (GenAI). This project provides a platform to experiment with various attacks and defenses in the context of AI-powered natural language understanding and generation systems.
+Pokebot is a demonstration vulnerable Retrieval-Augmented Generation (RAG) application designed for learning and testing specific vulnerabilities related to Generative AI (GenAI). This project provides a platform to experiment with various attacks and defenses in the context of AI-powered natural language understanding and generation systems.
 
 ## Quick Start
 
@@ -12,8 +12,8 @@ Gengar is a demonstration vulnerable Retrieval-Augmented Generation (RAG) applic
 
 Clone the repository and navigate to the project directory:
 ```bash
-git clone https://github.com/jchauhan/gengar
-cd gengar
+git clone https://github.com/jchauhan/pokebot
+cd pokebot
 ```
 
 Install the required dependencies:
@@ -31,7 +31,7 @@ Replace `<your_openai_api_key>` with your actual OpenAI API key.
 
 ### Running the Application
 
-Start the Gengar application by providing seed data (optional):
+Start the Pokebot application by providing seed data (optional):
 ```bash
 python main.py --seed data/med/articles/diabetes.txt
 ```
@@ -60,7 +60,7 @@ Get list of usernames
 
 ## Contributing
 
-Contributions to Gengar are welcome! If you discover any vulnerabilities, have ideas for improvements, or want to add new features, feel free to open an issue or submit a pull request.
+Contributions to Pokebot are welcome! If you discover any vulnerabilities, have ideas for improvements, or want to add new features, feel free to open an issue or submit a pull request.
 
 ## License
 
