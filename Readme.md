@@ -1,7 +1,3 @@
-Below is a suggested README file for the Pokebot project:
-
----
-
 # Pokebot: Vulnerable RAG Application for Testing GenAI Specific Vulnerabilities
 
 Pokebot is a demonstration vulnerable Retrieval-Augmented Generation (RAG) application designed for learning and testing specific vulnerabilities related to Generative AI (GenAI). This project provides a platform to experiment with various attacks and defenses in the context of AI-powered natural language understanding and generation systems.
