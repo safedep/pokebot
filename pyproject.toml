@@ -35,3 +35,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 gengar = "gengar.main:main"
+
+# Add a section to include data folder 
+[tool.poetry.extras]
+data = ["data/*"]

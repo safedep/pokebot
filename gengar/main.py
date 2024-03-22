@@ -1,5 +1,6 @@
 import argparse
 import gradio as gr
+import pkg_resources
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import OpenAIEmbeddings
@@ -32,7 +33,8 @@ class RAGApp:
 
     def _poison(self, pattern):
         # Load poisoned documents from directory
-        loader = DirectoryLoader("./data/poisoning/", glob=f"**/*{pattern}*", loader_cls=TextLoader, show_progress=True)
+        loader = DirectoryLoader(self._get_data_folder_location(rel_path="./data/poisoning/"), 
+                                 glob=f"**/*{pattern}*", loader_cls=TextLoader, show_progress=True)
         docs = loader.load()
         text_splitter = RecursiveCharacterTextSplitter()
         documents = text_splitter.split_documents(docs)
@@ -40,6 +42,11 @@ class RAGApp:
         self._docs.extend(documents)
         self._update_docs()
         return documents
+
+    def _get_data_folder_location(self, rel_path):
+        # Get absolute path to data folder
+        data_folder = pkg_resources.resource_filename(__name__, rel_path)
+        return data_folder
 
     def _update_docs(self):
         # Update embeddings and create retrieval chain
@@ -103,7 +110,8 @@ def main():
     # If seed is provided, parse and load the URLs in an array
     seed_list = []
     if args.seed:
-        with open(args.seed, 'r') as file:
+        seed_file = pkg_resources.resource_filename(__name__, args.seed)
+        with open(seed_file, 'r') as file:
             seed_list = [line.strip() for line in file.readlines()]
 
     # Initialize and run the RAGApp
