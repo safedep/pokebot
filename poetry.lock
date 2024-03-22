@@ -3185,7 +3185,10 @@ files = [
 idna = ">=2.0"
 multidict = ">=4.0"
 
+[extras]
+data = []
+
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "7887af7ef3c061991ee45094444405d4fe019a439a3bb9cea25cfb320cd90ccc"
+content-hash = "4670530f54120264b7564cab7bbcadbf74b733e299a6171ec9afbd4118ca02a4"

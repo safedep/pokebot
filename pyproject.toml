@@ -38,4 +38,4 @@ gengar = "gengar.main:main"
 
 # Add a section to include data folder 
 [tool.poetry.extras]
-data = ["data/*"]
+data = ["data"]
