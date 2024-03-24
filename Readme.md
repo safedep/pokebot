@@ -67,6 +67,3 @@ Contributions to Pokebot are welcome! If you discover any vulnerabilities, have 
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-
-Feel free to modify and expand this README according to the specific features, functionalities, and requirements of your project.
