@@ -10,7 +10,7 @@ git clone https://github.com/jchauhan/pokebot
 cd pokebot
 pip install poetry
 poetry install
-poetry run pokebot --seed data/med/articles/diabetes.txt
+poetry run pokebot rag start
 ```
 above command will create a virtual env in case non exists
 
