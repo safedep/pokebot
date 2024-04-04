@@ -2,6 +2,8 @@
 
 Pokebot is a demonstration vulnerable Retrieval-Augmented Generation (RAG) application designed for learning and testing specific vulnerabilities related to Generative AI (GenAI). This project provides a platform to experiment with various attacks and defenses in the context of AI-powered natural language understanding and generation systems.
 
+![Pokebot, How does it look like?](https://github.com/safedep/pokebot/assets/74857/f3de8ef3-39d9-4024-99d8-548d2c50defd)
+
 ## Quick Start
 
 Clone the repository and Install:
