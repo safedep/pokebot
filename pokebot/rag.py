@@ -42,7 +42,7 @@ class GradioUserInference:
                 height="65vh",
             )
             prompt = gr.Textbox(
-                show_label=False, placeholder='Enter Your Prompt Here. or just say !help', container=False
+                show_label=False, placeholder='Type !HELP or Enter Your Prompt Here.', container=False
             )
             with gr.Row():
                 submit = gr.Button(
