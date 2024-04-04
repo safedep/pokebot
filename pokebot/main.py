@@ -13,9 +13,11 @@ def _read_urls_from_file(filepath):
 
 ASSISTANTS = {
     "healthcare": AssistantRole("Your Diabetes AI Assistant", 
-                                _read_urls_from_file("data/med/articles/diabetes.txt")),
+                                _read_urls_from_file("data/med/articles/diabetes.txt"),
+                                "diabetes"),
     "default": AssistantRole("Your Diabetes Lite AI Assistant", 
-                             ["https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes"])
+                                ["https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes"],
+                                "diabetes"),
 }
 
 

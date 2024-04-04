@@ -159,9 +159,10 @@ class GradioUserInference:
 
 
 class AssistantRole:
-    def __init__(self, name, seed_urls):
+    def __init__(self, name, seed_urls, poison_files_pattern):
         self.name = name
         self.seed_urls = seed_urls
+        self.poison_files_pattern = poison_files_pattern
         
 
 class RAGApp(GradioUserInference):
@@ -183,6 +184,8 @@ class RAGApp(GradioUserInference):
         self._update_docs()
 
     def _poison(self, pattern):
+        if not pattern:
+            pattern = self.assistant.poison_files_pattern
         # Load poisoned documents from directory
         loader = DirectoryLoader(self._get_data_folder_location(rel_path="./data/poisoning/"), 
                                  glob=f"**/*{pattern}*", loader_cls=TextLoader, show_progress=True)
