@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pokebot"
-version = "0.1"
+version = "0.2"
 description = "Damn Vulnerable GenAI Rag App"
 authors = ["jchauhan <jitendra@detoxio.ai>"]
 readme = "Readme.md"
