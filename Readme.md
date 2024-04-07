@@ -6,6 +6,8 @@ Pokebot is a demonstration vulnerable Retrieval-Augmented Generation (RAG) appli
 
 ## [Watch Demo](https://open.substack.com/pub/detoxioai/p/meet-pokebot-a-damn-vulnerable-rag?r=2wroxs&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true)
 
+## [Try Hosted Version](https://huggingface.co/spaces/detoxioai/Pokebot)
+
 ## Quick Start
 
 Clone the repository and Install:
