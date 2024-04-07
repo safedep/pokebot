@@ -530,13 +530,13 @@ files = [
 
 [[package]]
 name = "detoxio"
-version = "0.1.15"
+version = "0.1.16"
 description = "detoxio.ai - API first LLM security testing and red team automation"
 optional = false
 python-versions = "<4.0,>=3.8"
 files = [
-    {file = "detoxio-0.1.15-py3-none-any.whl", hash = "sha256:30f4a8c357ecf5a12e198ebcc957f533f93b5e48044fdb14dedc28e203b2494c"},
-    {file = "detoxio-0.1.15.tar.gz", hash = "sha256:f00eec441c10150d26640a323f7334b52e227139683a6daf3b97d51b0c1ac134"},
+    {file = "detoxio-0.1.16-py3-none-any.whl", hash = "sha256:26847e16d32ad0b5819c3fcd5b9938e1a0dbe1314835a94ac8f615f177228325"},
+    {file = "detoxio-0.1.16.tar.gz", hash = "sha256:315eeebbaac2e6f7f821beaad30b27647bda9d4c6f120384930a9addbf6eac6b"},
 ]
 
 [package.dependencies]
