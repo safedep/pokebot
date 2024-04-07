@@ -47,7 +47,7 @@ class GradioUserInference:
                 elem_id="Pokebot",
                 label="Pokebot",
                 container=True,
-                height="65vh",
+                height="50vh",
             )
             prompt = gr.Textbox(
                 show_label=False, placeholder='Type !HELP or Enter Your Prompt Here.', container=False
