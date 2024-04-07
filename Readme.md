@@ -8,7 +8,7 @@ Pokebot is a demonstration vulnerable Retrieval-Augmented Generation (RAG) appli
 
 Clone the repository and Install:
 ```bash
-git clone https://github.com/jchauhan/pokebot
+git clone https://github.com/safedep/pokebot
 cd pokebot
 pip install poetry
 poetry install

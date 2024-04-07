@@ -12,7 +12,10 @@ def _read_urls_from_file(filepath):
     return seed_list
 
 ASSISTANTS = {
-    "healthcare": AssistantRole("Your Diabetes AI Assistant", 
+    "healthcare": AssistantRole("Your Healthcare AI Assistant", 
+                                _read_urls_from_file("data/med/articles/healthcare.txt"),
+                                "diabetes"),
+    "diabetes": AssistantRole("Your Diabetes AI Assistant", 
                                 _read_urls_from_file("data/med/articles/diabetes.txt"),
                                 "diabetes"),
     "default": AssistantRole("Your Diabetes Lite AI Assistant", 
